@@ -3,85 +3,129 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Veja como sua doação é utilizada. A Patas de Veludo preza pela transparência e presta contas de todas as suas atividades.">
-    <meta name="keywords" content="transparência ONG, prestação de contas, relatório de atividades">
-    <title>Transparência - Patas de Veludo</title>
+    
+    <title>Apadrinhe ou Doe - Patas de Veludo</title>
+    <meta name="description" content="Ajude a Patas de Veludo a continuar seu trabalho. Doe via PIX ou apadrinhe um de nossos gatos resgatados.">
+    <meta name="keywords" content="doação para animais, ajudar gatos, apadrinhar gato, doação PIX">
+    
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <header>
-        <a href="index.html" title="Página Inicial"><strong>Logo Patas de Veludo</strong></a>
-        <nav>
-            <ul>
-                <li><a href="index.html">Início</a></li>
-                <li><a href="sobre.html">Sobre Nós</a></li>
-                <li><a href="projetos.html">Nossos Resgatados</a></li>
-                <li><a href="voluntariado.html">Seja Voluntário</a></li>
-                <li><a href="doacoes.html">Apadrinhe ou Doe</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="contato.html">Contato</a></li>
-            </ul>
-        </nav>
+
+    <header class="site-header">
+        <div class="container">
+            <p class="site-logo">
+                <a href="index.html" title="Página Inicial"><strong>Logo Patas de Veludo</strong></a>
+            </p>
+            
+            <button class="menu-hamburguer" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu-principal">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav id="menu-principal" class="menu-principal" aria-label="Menu principal">
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li class="dropdown">
+                        <a href="sobre.html" aria-haspopup="true">Sobre Nós ▾</a>
+                        <ul class="submenu">
+                            <li><a href="sobre.html">Nossa História</a></li>
+                            <li><a href="transparencia.html">Transparência</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="projetos.html">Nossos Resgatados</a></li>
+                    <li><a href="voluntariado.html">Seja Voluntário</a></li>
+                    <li><a href="doacoes.html" aria-current="page">Apadrinhe ou Doe</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
+
     <main>
-        <section>
-            <h1>Transparência e Prestação de Contas</h1>
-            <p>A confiança de nossos doadores é nosso bem mais precioso. Por isso, fazemos questão de mostrar como cada recurso é utilizado para maximizar o impacto na vida dos nossos gatinhos. Acesse nossos relatórios e veja os dados em nossos gráficos interativos.</p>
-            <p><a href="#" title="Baixar relatório anual em PDF">Baixar Relatório Anual 2024 (PDF)</a></p>
-        </section>
-        <section>
-            <h2>Nossos Números</h2>
-            <article>
-                <h3>Distribuição de Recursos (Último Trimestre)</h3>
-                <p>Veja como o dinheiro das doações foi investido.</p>
-                <canvas id="graficoPizza" width="400" height="400"></canvas>
-            </article>
-            <article>
-                <h3>Evolução de Resgates (Últimos 6 meses)</h3>
-                <p>O número de gatinhos que conseguimos tirar das ruas.</p>
-                <canvas id="graficoLinha" width="400" height="400"></canvas>
-            </article>
-            <article>
-                <h3>Adoções por Bairro (2024)</h3>
-                <p>Os bairros onde nossos gatinhos encontraram um novo lar.</p>
-                <canvas id="graficoBarras" width="400" height="400"></canvas>
-            </article>
-        </section>
-        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-        <script>
-            const pizzaCtx = document.getElementById('graficoPizza').getContext('2d');
-            new Chart(pizzaCtx, { type: 'pie', data: { labels: ['Despesas Veterinárias', 'Alimentação e Areia', 'Manutenção do Abrigo', 'Administrativo'], datasets: [{ data: [45, 35, 15, 5], backgroundColor: ['#ff6384', '#36a2eb', '#ffce56', '#cccccc'] }] } });
-            const linhaCtx = document.getElementById('graficoLinha').getContext('2d');
-            new Chart(linhaCtx, { type: 'line', data: { labels: ['Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro'], datasets: [{ label: 'Gatos Resgatados', data: [8, 12, 10, 15, 13, 18], borderColor: '#36a2eb', fill: false }] } });
-            const barrasCtx = document.getElementById('graficoBarras').getContext('2d');
-            new Chart(barrasCtx, { type: 'bar', data: { labels: ['Centro', 'Bairro Norte', 'Bairro Sul', 'Bairro Leste', 'Bairro Oeste'], datasets: [{ label: 'Número de Adoções', data: [15, 22, 18, 10, 14], backgroundColor: '#ff6384' }] } });
-        </script>
+        <div class="container">
+            <header class="page-header">
+                <h1>Sua doação salva bigodes!</h1>
+                <p>Manter nosso abrigo funcionando, com ração de qualidade, areia sempre limpa, vacinas em dia e cuidados veterinários custa caro. Cada real doado é investido diretamente no bem-estar dos nossos resgatados. Veja como você pode ajudar:</p>
+            </header>
+            
+            <div class="doacoes-grid">
+                <section class="doacao-pix" aria-labelledby="doacao-pix-titulo">
+                    <h2 id="doacao-pix-titulo">Doação Pontual via PIX</h2>
+                    <p>A forma mais rápida de ajudar. Qualquer valor faz uma enorme diferença!</p>
+                    <p><strong>Nossa chave PIX (CNPJ):</strong> 00.123.456/0001-78</p>
+                    <img src="assets/images/qr-code-pix-patas-veludo.png" alt="QR Code para doação via PIX para a Patas de Veludo.">
+                </section>
+                
+                <section class="doacao-apadrinhamento" aria-labelledby="apadrinhamento-titulo">
+                    <h2 id="apadrinhamento-titulo">Apadrinhe um Resgatado</h2>
+                    <p>Não pode adotar agora? Apadrinhe um gatinho! Com uma contribuição mensal, você ajuda a custear o tratamento de um resgatado específico e recebe notícias e fotos dele todo mês.</p>
+                    <form action="#" method="post">
+                        <fieldset>
+                            <legend>Quero ser Padrinho / Madrinha!</legend>
+                            <div class="form-group">
+                                <label for="nome-padrinho">Seu Nome Completo:</label>
+                                <input type="text" id="nome-padrinho" name="nome-padrinho" required minlength="3" autocomplete="name">
+                            </div>
+                            <div class="form-group">
+                                <label for="email-padrinho">Seu E-mail:</label>
+                                <input type="email" id="email-padrinho" name="email-padrinho" required autocomplete="email">
+                            </div>
+                            <div class="form-group">
+                                <label for="gato-apadrinhar">Qual gatinho você quer apadrinhar?</label>
+                                <select id="gato-apadrinhar" name="gato-apadrinhar" required>
+                                    <option value="">Selecione um focinho...</option>
+                                    <option value="simba">Simba (O laranjinha brincalhão)</option>
+                                    <option value="nina">Nina (A siamesa tranquila)</option>
+                                    <option value="frajola">Frajola (O vovô carinhoso)</option>
+                                    <option value="lua">Lua (A filhote branquinha)</option>
+                                    <option value="qualquer">O que mais precisar de ajuda</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="valor-mensal">Valor da Contribuição Mensal (R$):</label>
+                                <input type="number" id="valor-mensal" name="valor-mensal" required min="20" placeholder="mínimo de 20">
+                            </div>
+                        </fieldset>
+                        <button type="submit">Confirmar Apadrinhamento</button>
+                    </form>
+                </section>
+            </div>
+        </div>
     </main>
-    <footer>
-        <section>
-            <h3>Patas de Veludo</h3>
-            <p>Dando uma nova chance a cada miado.</p>
-        </section>
-        <section>
-            <h3>Navegue</h3>
-            <ul>
-                <li><a href="sobre.html">Nossa História</a></li>
-                <li><a href="projetos.html">Adote um Gatinho</a></li>
-                <li><a href="transparencia.html">Transparência</a></li>
-                <li><a href="contato.html">Fale Conosco</a></li>
-            </ul>
-        </section>
-        <section>
-            <h3>Contato</h3>
-            <address>
-                Rua dos Felinos, 123, Ronronar, Cidade - Estado<br>
-                CEP: 00000-000<br>
-                Telefone: (00) 1234-5678<br>
-                Email: <a href="mailto:contato@patasdeveludo.org">contato@patasdeveludo.org</a>
-            </address>
-        </section>
-        <div>
-            <p>&copy; 2025 Patas de Veludo. Todos os direitos reservados. Feito com &hearts; por [Seu Nome/Grupo].</p>
+
+    <footer class="site-footer">
+        <div class="container">
+            <section>
+                <h3>Patas de Veludo</h3>
+                <p>Dando uma nova chance a cada miado.</p>
+            </section>
+            <section>
+                <h3>Navegue</h3>
+                <ul>
+                    <li><a href="sobre.html">Nossa História</a></li>
+                    <li><a href="projetos.html">Adote um Gatinho</a></li>
+                    <li><a href="transparencia.html">Transparência</a></li>
+                    <li><a href="contato.html">Fale Concosco</a></li>
+                </ul>
+            </section>
+            <section>
+                <h3>Contato</h3>
+                <address>
+                    Rua dos Felinos, 123, Ronronar, Cidade - Estado<br>
+                    CEP: 00000-000<br>
+                    Telefone: (00) 1234-5678<br>
+                    Email: <a href="mailto:contato@patasdeveludo.org">contato@patasdeveludo.org</a>
+                </address>
+            </section>
+            <div>
+                <p>&copy; 2025 Patas de Veludo. Todos os direitos reservados. Feito com &hearts; por [Seu Nome/Grupo].</p>
+            </div>
         </div>
     </footer>
+    
+    <script src="assets/js/main.js" defer></script>
 </body>
 </html>

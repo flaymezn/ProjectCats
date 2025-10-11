@@ -1,0 +1,31 @@
+@media (max-width: 767px) {
+  header .container .menu-hamburguer {
+    display: flex;
+  }
+
+  header .container .menu-principal {
+    display: none;
+    
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    background-color: var(--cor-fundo);
+    padding: var(--espaco-md);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+
+  header .container .menu-principal ul {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  header .container .menu-principal ul li {
+    margin: var(--espaco-sm) 0;
+    text-align: center;
+  }
+  
+  header .container .menu-principal.aberto {
+    display: block;
+  }
+}

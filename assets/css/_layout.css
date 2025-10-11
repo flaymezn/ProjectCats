@@ -1,0 +1,32 @@
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+body {
+  display: grid;
+  min-height: 100vh;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+}
+
+header {
+  grid-area: header;
+  padding: var(--espaco-sm) 0;
+  border-bottom: 1px solid var(--cor-neutra-media);
+}
+
+main {
+  grid-area: main;
+  padding: var(--espaco-xl) 0;
+}
+
+footer {
+  grid-area: footer;
+  background-color: var(--cor-neutra-clara);
+  padding: var(--espaco-lg) 0;
+}

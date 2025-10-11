@@ -3,91 +3,146 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Blog - Patas de Veludo</title>
     <meta name="description" content="Blog da Patas de Veludo com dicas de cuidado, histórias de resgate e notícias sobre nossos eventos para amantes de gatos.">
     <meta name="keywords" content="blog de gatos, dicas para gatos, cuidados com gatos, histórias de resgate">
-    <title>Blog - Patas de Veludo</title>
+    
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <header>
-        <a href="index.html" title="Página Inicial"><strong>Logo Patas de Veludo</strong></a>
-        <nav>
-            <ul>
-                <li><a href="index.html">Início</a></li>
-                <li><a href="sobre.html">Sobre Nós</a></li>
-                <li><a href="projetos.html">Nossos Resgatados</a></li>
-                <li><a href="voluntariado.html">Seja Voluntário</a></li>
-                <li><a href="doacoes.html">Apadrinhe ou Doe</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="contato.html">Contato</a></li>
-            </ul>
-        </nav>
+
+    <header class="site-header">
+        <div class="container">
+            <p class="site-logo">
+                <a href="index.html" title="Página Inicial"><strong>Logo Patas de Veludo</strong></a>
+            </p>
+            
+            <button class="menu-hamburguer" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu-principal">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav id="menu-principal" class="menu-principal" aria-label="Menu principal">
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li class="dropdown">
+                        <a href="sobre.html" aria-haspopup="true">Sobre Nós ▾</a>
+                        <ul class="submenu">
+                            <li><a href="sobre.html">Nossa História</a></li>
+                            <li><a href="transparencia.html">Transparência</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="projetos.html">Nossos Resgatados</a></li>
+                    <li><a href="voluntariado.html">Seja Voluntário</a></li>
+                    <li><a href="doacoes.html">Apadrinhe ou Doe</a></li>
+                    <li><a href="blog.html" aria-current="page">Blog</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
+
     <main>
-        <section>
-            <h1>Blog Patas de Veludo</h1>
-            <p>Dicas de cuidado, histórias emocionantes de resgate, notícias sobre nossos eventos e muito mais. Um espaço para todos que amam felinos!</p>
-        </section>
-        <section>
-            <h2>Nossas Postagens</h2>
-            <article>
-                <img src="assets/images/ilustracao-gato-castrado-feliz.png" alt="Ilustração fofa de um gato feliz após ser castrado." loading="lazy">
-                <h3>A Importância da Castração: Mitos e Verdades</h3>
-                <p><em>Publicado em: 08 de Outubro de 2025</em></p>
-                <p>Muitos tutores ainda têm dúvidas sobre a castração. Neste post, vamos desmistificar o procedimento e mostrar como ele é um ato de amor que salva vidas...</p>
-                <a href="#">Leia mais</a>
-            </article>
-            <hr>
-            <article>
-                <img src="assets/images/casa-pet-friendly-gato.jpg" alt="Sala de estar aconchegante preparada para receber um novo gato." loading="lazy">
-                <h3>Como Preparar sua Casa para a Chegada de um Gatinho</h3>
-                <p><em>Publicado em: 01 de Outubro de 2025</em></p>
-                <p>A chegada de um novo membro na família é um momento especial! Para garantir que seu novo amigo se sinta seguro e feliz, preparamos um checklist completo...</p>
-                <a href="#">Leia mais</a>
-            </article>
-            <hr>
-        </section>
-        <section>
-            <h2>Fique por dentro!</h2>
-            <p>Assine nossa newsletter para receber em primeira mão as novidades, dicas e histórias dos nossos gatinhos.</p>
-            <form action="#" method="post">
-                <fieldset>
-                    <legend>Inscreva-se</legend>
-                    <p><label for="email-news">Seu melhor e-mail:</label><br><input type="email" id="email-news" name="email-news" required placeholder="email@exemplo.com"></p>
-                    <p>Quais conteúdos você quer receber?</p>
-                    <input type="checkbox" id="pref_dicas" name="preferencias[]" value="dicas"> <label for="pref_dicas">Dicas de Cuidado</label><br>
-                    <input type="checkbox" id="pref_novos" name="preferencias[]" value="novos_gatos"> <label for="pref_novos">Novos Gatinhos para Adoção</label><br>
-                    <input type="checkbox" id="pref_eventos" name="preferencias[]" value="eventos"> <label for="pref_eventos">Notícias sobre Eventos</label>
-                </fieldset>
-                <button type="submit">Assinar Newsletter</button>
-            </form>
-        </section>
+        <div class="container">
+            <header class="page-header">
+                <h1>Blog Patas de Veludo</h1>
+                <p>Dicas de cuidado, histórias emocionantes de resgate, notícias sobre nossos eventos e muito mais. Um espaço para todos que amam felinos!</p>
+            </header>
+            
+            <section aria-labelledby="postagens-recentes">
+                <h2 id="postagens-recentes">Nossas Postagens</h2>
+
+                <article class="post-preview" aria-labelledby="post-titulo-1">
+                    <img src="assets/images/ilustracao-gato-castrado-feliz.png" alt="Ilustração fofa de um gato feliz após ser castrado." loading="lazy">
+                    <div class="post-content">
+                        <h3 id="post-titulo-1">A Importância da Castração: Mitos e Verdades</h3>
+                        <p class="post-meta">
+                            <time datetime="2025-10-08">Publicado em: 08 de Outubro de 2025</time>
+                        </p>
+                        <p>Muitos tutores ainda têm dúvidas sobre a castração. Neste post, vamos desmistificar o procedimento e mostrar como ele é um ato de amor que salva vidas...</p>
+                        <a href="#" class="btn" aria-label="Leia mais sobre A Importância da Castração: Mitos e Verdades">Leia mais</a>
+                    </div>
+                </article>
+
+                <hr>
+
+                <article class="post-preview" aria-labelledby="post-titulo-2">
+                    <img src="assets/images/casa-pet-friendly-gato.jpg" alt="Sala de estar aconchegante preparada para receber um novo gato." loading="lazy">
+                    <div class="post-content">
+                        <h3 id="post-titulo-2">Como Preparar sua Casa para a Chegada de um Gatinho</h3>
+                        <p class="post-meta">
+                            <time datetime="2025-10-01">Publicado em: 01 de Outubro de 2025</time>
+                        </p>
+                        <p>A chegada de um novo membro na família é um momento especial! Para garantir que seu novo amigo se sinta seguro e feliz, preparamos um checklist completo...</p>
+                        <a href="#" class="btn" aria-label="Leia mais sobre Como Preparar sua Casa para a Chegada de um Gatinho">Leia mais</a>
+                    </div>
+                </article>
+            </section>
+            
+            <aside>
+                <h2>Fique por dentro!</h2>
+                <p>Assine nossa newsletter para receber em primeira mão as novidades, dicas e histórias dos nossos gatinhos.</p>
+                <form action="#" method="post">
+                    <fieldset>
+                        <legend>Inscreva-se</legend>
+                        <div class="form-group">
+                            <label for="email-news">Seu melhor e-mail:</label>
+                            <input type="email" id="email-news" name="email-news" required placeholder="email@exemplo.com">
+                        </div>
+                        <fieldset>
+                            <legend>Quais conteúdos você quer receber?</legend>
+                            <div class="checkbox-group">
+                                <input type="checkbox" id="pref_dicas" name="preferencias[]" value="dicas">
+                                <label for="pref_dicas">Dicas de Cuidado</label>
+                            </div>
+                            <div class="checkbox-group">
+                                <input type="checkbox" id="pref_novos" name="preferencias[]" value="novos_gatos">
+                                <label for="pref_novos">Novos Gatinhos para Adoção</label>
+                            </div>
+                            <div class="checkbox-group">
+                                <input type="checkbox" id="pref_eventos" name="preferencias[]" value="eventos">
+                                <label for="pref_eventos">Notícias sobre Eventos</label>
+                            </div>
+                        </fieldset>
+                    </fieldset>
+                    <button type="submit">Assinar Newsletter</button>
+                </form>
+            </aside>
+        </div>
     </main>
-    <footer>
-        <section>
-            <h3>Patas de Veludo</h3>
-            <p>Dando uma nova chance a cada miado.</p>
-        </section>
-        <section>
-            <h3>Navegue</h3>
-            <ul>
-                <li><a href="sobre.html">Nossa História</a></li>
-                <li><a href="projetos.html">Adote um Gatinho</a></li>
-                <li><a href="transparencia.html">Transparência</a></li>
-                <li><a href="contato.html">Fale Conosco</a></li>
-            </ul>
-        </section>
-        <section>
-            <h3>Contato</h3>
-            <address>
-                Rua dos Felinos, 123, Ronronar, Cidade - Estado<br>
-                CEP: 00000-000<br>
-                Telefone: (00) 1234-5678<br>
-                Email: <a href="mailto:contato@patasdeveludo.org">contato@patasdeveludo.org</a>
-            </address>
-        </section>
-        <div>
-            <p>&copy; 2025 Patas de Veludo. Todos os direitos reservados. Feito com &hearts; por [Seu Nome/Grupo].</p>
-        </div>p
+
+    <footer class="site-footer">
+        <div class="container">
+            <section>
+                <h3>Patas de Veludo</h3>
+                <p>Dando uma nova chance a cada miado.</p>
+            </section>
+            <section>
+                <h3>Navegue</h3>
+                <ul>
+                    <li><a href="sobre.html">Nossa História</a></li>
+                    <li><a href="projetos.html">Adote um Gatinho</a></li>
+                    <li><a href="transparencia.html">Transparência</a></li>
+                    <li><a href="contato.html">Fale Conosco</a></li>
+                </ul>
+            </section>
+            <section>
+                <h3>Contato</h3>
+                <address>
+                    Rua dos Felinos, 123, Ronronar, Cidade - Estado<br>
+                    CEP: 00000-000<br>
+                    Telefone: (00) 1234-5678<br>
+                    Email: <a href="mailto:contato@patasdeveludo.org">contato@patasdeveludo.org</a>
+                </address>
+            </section>
+            <div>
+                <p>&copy; 2025 Patas de Veludo. Todos os direitos reservados. Feito com &hearts; por [Seu Nome/Grupo].</p>
+            </div>
+        </div>
     </footer>
+    
+    <script src="assets/js/main.js" defer></script>
 </body>
 </html>

@@ -3,131 +3,127 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Transparência - Patas de Veludo</title>
+    <meta name="description" content="Veja como sua doação é utilizada. A Patas de Veludo preza pela transparência e presta contas de todas as suas atividades.">
+    <meta name="keywords" content="transparência ONG, prestação de contas, relatório de atividades">
     
-    <meta name="description" content="Patas de Veludo - ONG dedicada ao resgate, cuidado e adoção de gatos em situação de risco. Ajude-nos a salvar vidas!">
-    <meta name="keywords" content="ONG, gatos, felinos, resgate de animais, adoção de gatos, castração, lar temporário">
-
-    <title>Patas de Veludo - Resgate e Adoção de Gatos</title>
-
-    </head>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
 <body>
 
-    <header>
-        <a href="index.html" title="Página Inicial">
-            <strong>Logo Patas de Veludo</strong>
-        </a>
-        <nav>
-            <ul>
-                <li><a href="index.html">Início</a></li>
-                <li><a href="sobre.html">Sobre Nós</a></li>
-                <li><a href="projetos.html">Nossos Resgatados</a></li>
-                <li><a href="voluntariado.html">Seja Voluntário</a></li>
-                <li><a href="doacoes.html">Apadrinhe ou Doe</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="contato.html">Contato</a></li>
-            </ul>
-        </nav>
+    <header class="site-header">
+        <div class="container">
+            <p class="site-logo">
+                <a href="index.html" title="Página Inicial"><strong>Logo Patas de Veludo</strong></a>
+            </p>
+            
+            <button class="menu-hamburguer" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu-principal">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav id="menu-principal" class="menu-principal" aria-label="Menu principal">
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li class="dropdown">
+                        <a href="sobre.html" aria-haspopup="true">Sobre Nós ▾</a>
+                        <ul class="submenu">
+                            <li><a href="sobre.html">Nossa História</a></li>
+                            <li><a href="transparencia.html" aria-current="page">Transparência</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="projetos.html">Nossos Resgatados</a></li>
+                    <li><a href="voluntariado.html">Seja Voluntário</a></li>
+                    <li><a href="doacoes.html">Apadrinhe ou Doe</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-        
-        <main>
-    <section>
-        <h1>Transparência e Prestação de Contas</h1>
-        <p>A confiança de nossos doadores é nosso bem mais precioso. Por isso, fazemos questão de mostrar como cada recurso é utilizado para maximizar o impacto na vida dos nossos gatinhos. Acesse nossos relatórios e veja os dados em nossos gráficos interativos.</p>
-        <p><a href="#" title="Baixar relatório anual em PDF">Baixar Relatório Anual 2024 (PDF)</a></p>
-    </section>
+
+    <main>
+        <div class="container">
+            <header class="page-header">
+                <h1>Transparência e Prestação de Contas</h1>
+                <p>A confiança de nossos doadores é nosso bem mais precioso. Por isso, fazemos questão de mostrar como cada recurso é utilizado para maximizar o impacto na vida dos nossos gatinhos. Acesse nossos relatórios e veja os dados em nossos gráficos interativos.</p>
+                <p><a href="#" class="btn" title="Baixar relatório anual em PDF">Baixar Relatório Anual 2024 (PDF)</a></p>
+            </header>
+            
+            <section aria-labelledby="nossos-numeros">
+                <h2 id="nossos-numeros">Nossos Números</h2>
+                <div class="graficos-grid">
+                    <article class="card" aria-labelledby="grafico-pizza-titulo">
+                        <div class="card-content">
+                            <h3 id="grafico-pizza-titulo">Distribuição de Recursos (Último Trimestre)</h3>
+                            <p>Veja como o dinheiro das doações foi investido.</p>
+                            <canvas id="graficoPizza" role="img" aria-label="Gráfico de pizza mostrando a distribuição de recursos: 45% para Despesas Veterinárias, 35% para Alimentação e Areia, 15% para Manutenção do Abrigo e 5% para Administrativo."></canvas>
+                        </div>
+                    </article>
+                    
+                    <article class="card" aria-labelledby="grafico-linha-titulo">
+                        <div class="card-content">
+                            <h3 id="grafico-linha-titulo">Evolução de Resgates (Últimos 6 meses)</h3>
+                            <p>O número de gatinhos que conseguimos tirar das ruas.</p>
+                            <canvas id="graficoLinha" role="img" aria-label="Gráfico de linha mostrando um aumento no número de gatos resgatados, começando em 8 em Abril e terminando em 18 em Setembro."></canvas>
+                        </div>
+                    </article>
+                    
+                    <article class="card" aria-labelledby="grafico-barras-titulo">
+                        <div class="card-content">
+                            <h3 id="grafico-barras-titulo">Adoções por Bairro (2024)</h3>
+                            <p>Os bairros onde nossos gatinhos encontraram um novo lar.</p>
+                            <canvas id="graficoBarras" role="img" aria-label="Gráfico de barras mostrando o número de adoções por bairro. O Bairro Norte lidera com 22 adoções."></canvas>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <section>
+                <h3>Patas de Veludo</h3>
+                <p>Dando uma nova chance a cada miado.</p>
+            </section>
+            <section>
+                <h3>Navegue</h3>
+                <ul>
+                    <li><a href="sobre.html">Nossa História</a></li>
+                    <li><a href="projetos.html">Adote um Gatinho</a></li>
+                    <li><a href="transparencia.html">Transparência</a></li>
+                    <li><a href="contato.html">Fale Conosco</a></li>
+                </ul>
+            </section>
+            <section>
+                <h3>Contato</h3>
+                <address>
+                    Rua dos Felinos, 123, Ronronar, Cidade - Estado<br>
+                    CEP: 00000-000<br>
+                    Telefone: (00) 1234-5678<br>
+                    Email: <a href="mailto:contato@patasdeveludo.org">contato@patasdeveludo.org</a>
+                </address>
+            </section>
+            <div>
+                <p>&copy; 2025 Patas de Veludo. Todos os direitos reservados. Feito com &hearts; por [Seu Nome/Grupo].</p>
+            </div>
+        </div>
+    </footer>
     
-    <section>
-        <h2>Nossos Números</h2>
-        
-        <article>
-            <h3>Distribuição de Recursos (Último Trimestre)</h3>
-            <p>Veja como o dinheiro das doações foi investido.</p>
-            <canvas id="graficoPizza" width="400" height="400"></canvas>
-        </article>
-
-        <article>
-            <h3>Evolução de Resgates (Últimos 6 meses)</h3>
-            <p>O número de gatinhos que conseguimos tirar das ruas.</p>
-            <canvas id="graficoLinha" width="400" height="400"></canvas>
-        </article>
-        
-        <article>
-            <h3>Adoções por Bairro (2024)</h3>
-            <p>Os bairros onde nossos gatinhos encontraram um novo lar.</p>
-            <canvas id="graficoBarras" width="400" height="400"></canvas>
-        </article>
-    </section>
-
+    <script src="assets/js/main.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script>
         const pizzaCtx = document.getElementById('graficoPizza').getContext('2d');
-        new Chart(pizzaCtx, {
-            type: 'pie',
-            data: {
-                labels: ['Despesas Veterinárias', 'Alimentação e Areia', 'Manutenção do Abrigo', 'Administrativo'],
-                datasets: [{
-                    data: [45, 35, 15, 5],
-                    backgroundColor: ['#ff6384', '#36a2eb', '#ffce56', '#cccccc']
-                }]
-            }
-        });
-
+        new Chart(pizzaCtx, { type: 'pie', data: { labels: ['Despesas Veterinárias', 'Alimentação e Areia', 'Manutenção do Abrigo', 'Administrativo'], datasets: [{ data: [45, 35, 15, 5], backgroundColor: ['#ff6384', '#36a2eb', '#ffce56', '#cccccc'] }] } });
+        
         const linhaCtx = document.getElementById('graficoLinha').getContext('2d');
-        new Chart(linhaCtx, {
-            type: 'line',
-            data: {
-                labels: ['Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro'],
-                datasets: [{
-                    label: 'Gatos Resgatados',
-                    data: [8, 12, 10, 15, 13, 18],
-                    borderColor: '#36a2eb',
-                    fill: false
-                }]
-            }
-        });
-
+        new Chart(linhaCtx, { type: 'line', data: { labels: ['Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro'], datasets: [{ label: 'Gatos Resgatados', data: [8, 12, 10, 15, 13, 18], borderColor: '#36a2eb', fill: false }] } });
+        
         const barrasCtx = document.getElementById('graficoBarras').getContext('2d');
-        new Chart(barrasCtx, {
-            type: 'bar',
-            data: {
-                labels: ['Centro', 'Bairro Norte', 'Bairro Sul', 'Bairro Leste', 'Bairro Oeste'],
-                datasets: [{
-                    label: 'Número de Adoções',
-                    data: [15, 22, 18, 10, 14],
-                    backgroundColor: '#ff6384'
-                }]
-            }
-        });
+        new Chart(barrasCtx, { type: 'bar', data: { labels: ['Centro', 'Bairro Norte', 'Bairro Sul', 'Bairro Leste', 'Bairro Oeste'], datasets: [{ label: 'Número de Adoções', data: [15, 22, 18, 10, 14], backgroundColor: '#ff6384' }] } });
     </script>
-        </main>
-
-    <footer>
-        <section>
-            <h3>Patas de Veludo</h3>
-            <p>Dando uma nova chance a cada miado.</p>
-        </section>
-        <section>
-            <h3>Navegue</h3>
-            <ul>
-                <li><a href="sobre.html">Nossa História</a></li>
-                <li><a href="projetos.html">Adote um Gatinho</a></li>
-                <li><a href="transparencia.html">Transparência</a></li>
-                <li><a href="contato.html">Fale Conosco</a></li>
-            </ul>
-        </section>
-        <section>
-            <h3>Contato</h3>
-            <address>
-                Rua dos Felinos, 123, Ronronar, Cidade - Estado<br>
-                CEP: 00000-000<br>
-                Telefone: (00) 1234-5678<br>
-                Email: <a href="mailto:contato@patasdeveludo.org">contato@patasdeveludo.org</a>
-            </address>
-        </section>
-        <div>
-            <p>&copy; 2025 Patas de Veludo. Todos os direitos reservados. Feito com &hearts; por [Seu Nome/Grupo].</p>
-        </div>
-    </footer>
-
 </body>
 </html>
