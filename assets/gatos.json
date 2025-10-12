@@ -1,0 +1,61 @@
+[
+  {
+    "id": "simba",
+    "nome": "Simba",
+    "imagem": "assets/images/gato-simba-laranja-tigrado.jpg",
+    "descricao": "Macho, 2 anos, muito brincalhão.",
+    "tags": [
+      { "texto": "Brincalhão", "cor": "badge-laranja" },
+      { "texto": "Adulto", "cor": "badge-cinza" }
+    ]
+  },
+  {
+    "id": "nina",
+    "nome": "Nina",
+    "imagem": "assets/images/gata-nina-siamesa-olhos-azuis.jpg",
+    "descricao": "Fêmea, 1 ano, dócil e tranquila.",
+    "tags": [
+      { "texto": "Dócil", "cor": "badge-azul" },
+      { "texto": "Calma", "cor": "badge-cinza" }
+    ]
+  },
+  {
+    "id": "salem",
+    "nome": "Salem",
+    "imagem": "assets/images/gato-preto-elegante-janela.jpg",
+    "descricao": "Macho, 3 anos, um lorde misterioso.",
+    "tags": [
+      { "texto": "Independente", "cor": "badge-cinza" }
+    ]
+  },
+  {
+    "id": "mia",
+    "nome": "Mia",
+    "imagem": "assets/images/gata-rajada-brincando-pena.jpg",
+    "descricao": "Fêmea, 1 ano, cheia de energia.",
+    "tags": [
+      { "texto": "Energética", "cor": "badge-laranja" },
+      { "texto": "Brincalhona", "cor": "badge-laranja" }
+    ]
+  },
+  {
+    "id": "bowie",
+    "nome": "Bowie",
+    "imagem": "assets/images/gato-branco-heterocromia.jpg",
+    "descricao": "Macho, 2 anos, um gato único e especial.",
+    "tags": [
+      { "texto": "Adoção Especial", "cor": "badge-roxo" },
+      { "texto": "Calmo", "cor": "badge-cinza" }
+    ]
+  },
+  {
+    "id": "irmaos-pimenta",
+    "nome": "Irmãos Pimenta",
+    "imagem": "assets/images/filhotes-gatos-dormindo-cesta.jpg",
+    "descricao": "Filhotes para adoção conjunta.",
+    "tags": [
+      { "texto": "Filhotes", "cor": "badge-azul" },
+      { "texto": "Adoção Conjunta", "cor": "badge-azul" }
+    ]
+  }
+]

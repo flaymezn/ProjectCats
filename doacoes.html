@@ -3,27 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
     <title>Apadrinhe ou Doe - Patas de Veludo</title>
     <meta name="description" content="Ajude a Patas de Veludo a continuar seu trabalho. Doe via PIX ou apadrinhe um de nossos gatos resgatados.">
-    <meta name="keywords" content="doação para animais, ajudar gatos, apadrinhar gato, doação PIX">
-    
+    <meta name="keywords" content="doação para animais, ajudar gatos, apadrinhar gato">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-
     <header class="site-header">
         <div class="container">
-            <p class="site-logo">
-                <a href="index.html" title="Página Inicial"><strong>Logo Patas de Veludo</strong></a>
-            </p>
-            
+            <p class="site-logo"><a href="index.html" title="Página Inicial"><strong>Logo Patas de Veludo</strong></a></p>
             <button class="menu-hamburguer" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu-principal">
-                <span></span>
-                <span></span>
-                <span></span>
+                <span></span><span></span><span></span>
             </button>
-
             <nav id="menu-principal" class="menu-principal" aria-label="Menu principal">
                 <ul>
                     <li><a href="index.html">Início</a></li>
@@ -43,14 +34,12 @@
             </nav>
         </div>
     </header>
-
     <main>
         <div class="container">
             <header class="page-header">
                 <h1>Sua doação salva bigodes!</h1>
-                <p>Manter nosso abrigo funcionando, com ração de qualidade, areia sempre limpa, vacinas em dia e cuidados veterinários custa caro. Cada real doado é investido diretamente no bem-estar dos nossos resgatados. Veja como você pode ajudar:</p>
+                <p>Manter nosso abrigo funcionando custa caro. Cada real doado é investido diretamente no bem-estar dos nossos resgatados.</p>
             </header>
-            
             <div class="doacoes-grid">
                 <section class="doacao-pix" aria-labelledby="doacao-pix-titulo">
                     <h2 id="doacao-pix-titulo">Doação Pontual via PIX</h2>
@@ -58,10 +47,9 @@
                     <p><strong>Nossa chave PIX (CNPJ):</strong> 00.123.456/0001-78</p>
                     <img src="assets/images/qr-code-pix-patas-veludo.png" alt="QR Code para doação via PIX para a Patas de Veludo.">
                 </section>
-                
                 <section class="doacao-apadrinhamento" aria-labelledby="apadrinhamento-titulo">
                     <h2 id="apadrinhamento-titulo">Apadrinhe um Resgatado</h2>
-                    <p>Não pode adotar agora? Apadrinhe um gatinho! Com uma contribuição mensal, você ajuda a custear o tratamento de um resgatado específico e recebe notícias e fotos dele todo mês.</p>
+                    <p>Não pode adotar agora? Apadrinhe um gatinho! Com uma contribuição mensal, você ajuda a custear o tratamento de um resgatado.</p>
                     <form action="#" method="post">
                         <fieldset>
                             <legend>Quero ser Padrinho / Madrinha!</legend>
@@ -77,10 +65,10 @@
                                 <label for="gato-apadrinhar">Qual gatinho você quer apadrinhar?</label>
                                 <select id="gato-apadrinhar" name="gato-apadrinhar" required>
                                     <option value="">Selecione um focinho...</option>
-                                    <option value="simba">Simba (O laranjinha brincalhão)</option>
-                                    <option value="nina">Nina (A siamesa tranquila)</option>
-                                    <option value="frajola">Frajola (O vovô carinhoso)</option>
-                                    <option value="lua">Lua (A filhote branquinha)</option>
+                                    <option value="simba">Simba</option>
+                                    <option value="nina">Nina</option>
+                                    <option value="frajola">Frajola</option>
+                                    <option value="lua">Lua</option>
                                     <option value="qualquer">O que mais precisar de ajuda</option>
                                 </select>
                             </div>
@@ -95,7 +83,6 @@
             </div>
         </div>
     </main>
-
     <footer class="site-footer">
         <div class="container">
             <section>
@@ -121,11 +108,12 @@
                 </address>
             </section>
             <div>
-                <p>&copy; 2025 Patas de Veludo. Todos os direitos reservados. Feito com &hearts; por [Seu Nome/Grupo].</p>
+                <p>&copy; 2025 Patas de Veludo. Todos os direitos reservados.</p>
             </div>
         </div>
     </footer>
-    
-    <script src="assets/js/main.js" defer></script>
+    <script src="https://unpkg.com/imask"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script type="module" src="assets/js/main.js" defer></script>
 </body>
 </html>

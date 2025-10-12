@@ -1,6 +1,18 @@
-const botaoMenu = document.querySelector('.menu-hamburguer');
-const menu = document.querySelector('.menu-principal');
+import { initRouter } from './router.js';
+import { initFormValidator } from './form-validator.js';
+import { initMasks } from './masks.js';
 
-botaoMenu.addEventListener('click', () => {
-  menu.classList.toggle('aberto');
-});
+// Função para ser executada quando o conteúdo da página for carregado
+function onReady() {
+  initRouter();
+  initFormValidator();
+  initMasks();
+}
+
+// Verifica se o documento já foi carregado
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', onReady);
+} else {
+  // Se já foi carregado, executa imediatamente
+  onReady();
+}

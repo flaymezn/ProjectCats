@@ -1,31 +1,78 @@
+/* ==> Menu Hambúrguer */
+.menu-hamburguer {
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: none; /* Escondido em telas grandes */
+  flex-direction: column;
+  gap: 6px;
+  z-index: 1001; /* Garante que fique acima de outros elementos */
+}
+
+.menu-hamburguer span {
+  display: block;
+  width: 30px;
+  height: 3px;
+  background-color: var(--cor-texto);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Animação do Hambúrguer para "X" */
+.menu-hamburguer.aberto span:nth-child(1) {
+  transform: rotate(45deg) translate(7px, 7px);
+}
+.menu-hamburguer.aberto span:nth-child(2) {
+  opacity: 0;
+}
+.menu-hamburguer.aberto span:nth-child(3) {
+  transform: rotate(-45deg) translate(7px, -7px);
+}
+
+
+/* -- Breakpoint para Tablets e Celulares -- */
 @media (max-width: 767px) {
-  header .container .menu-hamburguer {
+  header nav ul {
+    display: none;
+  }
+
+  .menu-hamburguer {
     display: flex;
   }
-
-  header .container .menu-principal {
+  
+  .menu-principal {
     display: none;
-    
-    position: absolute;
-    top: 80px;
+    position: fixed; /* Menu fica fixo na tela */
+    top: 0;
     left: 0;
-    width: 100%;
+    width: 100vw;
+    height: 100vh;
     background-color: var(--cor-fundo);
-    padding: var(--espaco-md);
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    z-index: 1000;
   }
 
-  header .container .menu-principal ul {
-    flex-direction: column;
-    width: 100%;
-  }
-
-  header .container .menu-principal ul li {
-    margin: var(--espaco-sm) 0;
-    text-align: center;
+  .menu-principal.aberto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   
-  header .container .menu-principal.aberto {
-    display: block;
+  .menu-principal ul {
+    flex-direction: column;
+    gap: var(--espaco-lg);
+  }
+  
+  .menu-principal li {
+    margin-left: 0;
+    text-align: center;
+    font-size: var(--fs-md);
+  }
+
+  /* Esconde o dropdown no mobile */
+  .submenu {
+    display: none !important;
+  }
+  .dropdown > a {
+    pointer-events: none; /* Desativa o link pai do dropdown no mobile */
+    color: var(--cor-neutra-media);
   }
 }

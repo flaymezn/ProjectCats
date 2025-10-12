@@ -3,27 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Nossa História - Patas de Veludo</title>
-    <meta name="description" content="Conheça a história e a missão da Patas de Veludo, nossa equipe e o impacto que causamos na vida dos felinos.">
-    <meta name="keywords" content="ONG de gatos, história, missão, valores, voluntários">
-    
+    <meta name="description" content="Conheça a história e a missão da Patas de Veludo.">
+    <meta name="keywords" content="ONG de gatos, história, missão, valores">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-
     <header class="site-header">
         <div class="container">
-            <p class="site-logo">
-                <a href="index.html" title="Página Inicial"><strong>Logo Patas de Veludo</strong></a>
-            </p>
-            
+            <p class="site-logo"><a href="index.html" title="Página Inicial"><strong>Logo Patas de Veludo</strong></a></p>
             <button class="menu-hamburguer" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu-principal">
-                <span></span>
-                <span></span>
-                <span></span>
+                <span></span><span></span><span></span>
             </button>
-
             <nav id="menu-principal" class="menu-principal" aria-label="Menu principal">
                 <ul>
                     <li><a href="index.html">Início</a></li>
@@ -43,61 +34,53 @@
             </nav>
         </div>
     </header>
-
     <main>
         <div class="container">
             <header class="page-header">
                 <h1>Como tudo começou...</h1>
             </header>
-            
             <article>
                 <section aria-labelledby="nossa-historia">
                     <h2 id="nossa-historia" class="visually-hidden">Nossa História</h2>
                     <p>A Patas de Veludo nasceu em 2018, do resgate de uma única gatinha abandonada, a Bebel. A paixão por ajudar aquele ser indefeso se transformou em um movimento que hoje conta com dezenas de voluntários e uma estrutura dedicada a salvar centenas de vidas felinas.</p>
                     <figure>
-                        <img src="assets/images/gata-bebel-resgatada-rua.jpg" alt="A gatinha Bebel, inspiração da ONG, ainda filhote, em uma rua de paralelepípedos." loading="lazy">
+                        <img src="assets/images/gata-bebel-resgatada-rua.jpg" alt="A gatinha Bebel, inspiração da ONG, quando foi resgatada." loading="lazy">
                         <figcaption>Bebel, a gatinha que deu início à nossa jornada.</figcaption>
                     </figure>
                 </section>
-                
                 <section aria-labelledby="missao-visao-valores">
                     <h2 id="missao-visao-valores">Missão, Visão e Valores</h2>
                     <dl>
                         <dt>Missão</dt>
-                        <dd>Resgatar, reabilitar e encontrar lares seguros e amorosos para gatos em situação de vulnerabilidade, promovendo a conscientização sobre a posse responsável.</dd>
-                        
+                        <dd>Resgatar, reabilitar e encontrar lares seguros e amorosos para gatos em situação de vulnerabilidade.</dd>
                         <dt>Visão</dt>
-                        <dd>Sonhamos com um mundo onde todo gato seja respeitado, cuidado e amado, e o abandono seja coisa do passado.</dd>
-                        
+                        <dd>Sonhamos com um mundo onde todo gato seja respeitado, cuidado e amado.</dd>
                         <dt>Valores</dt>
                         <dd>Amor aos Animais, Comprometimento, Transparência, Ética e Respeito à Vida.</dd>
                     </dl>
                 </section>
-
                 <section aria-labelledby="dia-a-dia">
                     <h2 id="dia-a-dia">Nosso dia a dia no abrigo</h2>
-                    <video controls poster="assets/images/abrigo-gatos-moderno-voluntario.jpg" width="640" height="360">
+                    <video controls poster="assets/images/abrigo-gatos-moderno-voluntario.jpg">
                         <source src="assets/videos/institucional.mp4" type="video/mp4">
                         <track kind="captions" src="assets/captions/institucional.vtt" srclang="pt-BR" label="Legendas em Português">
                         Seu navegador não suporta o elemento de vídeo.
                     </video>
                 </section>
-
                 <section aria-labelledby="depoimentos">
                     <h2 id="depoimentos">Histórias que aquecem o coração</h2>
-                    <figure aria-labelledby="depoimento-carlos">
-                        <figcaption id="depoimento-carlos">Depoimento de Carlos, que adotou o Frajola:</figcaption>
+                    <div>
+                        <p><strong>Depoimento de Carlos, que adotou o Frajola:</strong></p>
                         <img src="assets/images/homem-carlos-gato-frajola-colo.jpg" alt="Carlos, o adotante, sorrindo com o gato Frajola em seu colo." loading="lazy">
                         <audio controls preload="none">
                             <source src="assets/audios/depoimento_adotante.mp3" type="audio/mpeg">
                             Seu navegador não suporta o elemento de áudio.
                         </audio>
-                    </figure>
+                    </div>
                 </section>
             </article>
         </div>
     </main>
-
     <footer class="site-footer">
         <div class="container">
             <section>
@@ -105,7 +88,7 @@
                 <p>Dando uma nova chance a cada miado.</p>
             </section>
             <section>
-                <h3>Navegue</h3> 
+                <h3>Navegue</h3>
                 <ul>
                     <li><a href="sobre.html">Nossa História</a></li>
                     <li><a href="projetos.html">Adote um Gatinho</a></li>
@@ -123,11 +106,12 @@
                 </address>
             </section>
             <div>
-                <p>&copy; 2025 Patas de Veludo. Todos os direitos reservados. Feito com &hearts; por [Seu Nome/Grupo].</p>
+                <p>&copy; 2025 Patas de Veludo. Todos os direitos reservados.</p>
             </div>
         </div>
     </footer>
-
-    <script src="assets/js/main.js" defer></script>
+    <script src="https://unpkg.com/imask"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script type="module" src="assets/js/main.js" defer></script>
 </body>
 </html>
