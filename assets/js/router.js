@@ -21,7 +21,6 @@ async function loadPage(path) {
         contentHTML = doc.querySelector('main').innerHTML;
         mainContent.innerHTML = contentHTML;
         
-        // Lógica pós-carregamento
         if (pagePath === 'projetos.html') {
             const jsonResponse = await fetch('assets/gatos.json');
             const gatos = await jsonResponse.json();
