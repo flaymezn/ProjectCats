@@ -1,45 +1,27 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+* { margin: 0; padding: 0; box-sizing: border-box;
 }
 
-body {
-  font-family: var(--fonte-principal);
-  font-size: var(--fs-sm);
-  color: var(--cor-texto);
-  background-color: var(--cor-fundo);
-  line-height: 1.6;
+body { font-family: var(--fonte-principal); font-size: var(--fs-sm); color: var(--cor-texto); background-color: var(--cor-fundo); line-height: 1.6; 
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: var(--fonte-titulos);
-  font-weight: var(--fw-bold);
-  color: var(--cor-primaria);
-  margin-bottom: var(--espaco-sm);
+h1, h2, h3, h4, h5, h6 { font-family: var(--fonte-titulos); font-weight: var(--fw-bold); color: var(--cor-primaria); margin-bottom: var(--espaco-sm); 
 }
 
 h1 { font-size: var(--fs-xl); }
 h2 { font-size: var(--fs-lg); }
 h3 { font-size: var(--fs-md); }
 
-p {
-  margin-bottom: var(--espaco-sm);
+p { margin-bottom: var(--espaco-sm);
 }
 
-a {
-  color: var(--cor-secundaria);
-  text-decoration: none;
-  font-weight: var(--fw-bold);
+a { color: var(--cor-secundaria); text-decoration: none; font-weight: var(--fw-bold); 
 }
 
-a:hover {
-  text-decoration: underline;
-  filter: brightness(0.9);
+a:hover { text-decoration: underline; filter: brightness(0.9);
 }
 
-img, video {
-  max-width: 100%;
-  height: auto;
-  display: block;
+a:focus { outline: 2px solid var(--cor-secundaria); outline-offset: 2px; border-radius: 2px; 
+}
+
+img, video { max-width: 100%; height: auto; display: block;
 }

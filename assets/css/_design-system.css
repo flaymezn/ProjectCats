@@ -1,29 +1,23 @@
 :root {
-  --cor-primaria: #E67E22;
-  --cor-secundaria: #3498DB;
+  --cor-primaria: #D35400;
+  --cor-secundaria: #2980B9;
   --cor-fundo: #FDFCFB;
   --cor-texto: #333333;
   --cor-neutra-clara: #f4f4f4;
   --cor-neutra-media: #dddddd;
-  --cor-sucesso: #2ECC71;
-  --cor-erro: #E74C3C;
-
+  --cor-sucesso: #27AE60;
+  --cor-erro: #C0392B;
   --fonte-principal: 'Nunito', sans-serif;
   --fonte-titulos: 'Poppins', sans-serif;
-  
-  --fs-xs: 12px;
-  --fs-sm: 16px;
-  --fs-md: 24px;
-  --fs-lg: 32px;
-  --fs-xl: 48px;
-
-  --fw-regular: 400;
-  --fw-bold: 700;
-
-  --espaco-xs: 8px;
-  --espaco-sm: 16px;
-  --espaco-md: 24px;
-  --espaco-lg: 32px;
-  --espaco-xl: 48px;
-  --espaco-xxl: 64px;
+  --fs-xs: 12px; --fs-sm: 16px; --fs-md: 24px; --fs-lg: 32px; --fs-xl: 48px;
+  --fw-regular: 400; --fw-bold: 700;
+  --espaco-xs: 8px; --espaco-sm: 16px; --espaco-md: 24px; --espaco-lg: 32px; --espaco-xl: 48px; --espaco-xxl: 64px;
+}
+body.dark-mode {
+  --cor-primaria: #F39C12;
+  --cor-secundaria: #5DADE2;
+  --cor-fundo: #2c3e50;
+  --cor-texto: #ecf0f1;
+  --cor-neutra-clara: #34495e;
+  --cor-neutra-media: #5D6D7E;
 }

@@ -21,7 +21,7 @@ async function loadPage(path) {
         contentHTML = doc.querySelector('main').innerHTML;
         mainContent.innerHTML = contentHTML;
         
-        if (pagePath === 'projetos.html') {
+        if (pagePath.includes('projetos.html')) {
             const jsonResponse = await fetch('assets/gatos.json');
             const gatos = await jsonResponse.json();
             const cardsHTML = gatos.map(createCatCard).join('');
@@ -29,7 +29,7 @@ async function loadPage(path) {
             if(cardGrid) cardGrid.innerHTML = cardsHTML;
         }
 
-        if (pagePath === 'transparencia.html') {
+        if (pagePath.includes('transparencia.html')) {
             initCharts();
         }
 
