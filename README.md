@@ -4,7 +4,7 @@ Este é o projeto final desenvolvido para a disciplina de Desenvolvimento Front-
 
 ---
 
-![📸 Screenshot]
+![📸 Screenshot](docs/screenshot-projeto.png)
 
 ## ✨ Funcionalidades Implementadas
 
