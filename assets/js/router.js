@@ -33,7 +33,6 @@ async function loadPage(path) {
             initCharts();
         }
 
-        // Re-inicializa validadores e máscaras em qualquer página com formulário
         initFormValidator();
         initMasks();
 

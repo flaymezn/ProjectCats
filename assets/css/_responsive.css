@@ -1,12 +1,11 @@
-/* ==> Menu Hambúrguer */
 .menu-hamburguer {
   border: none;
   background: none;
   cursor: pointer;
-  display: none; /* Escondido em telas grandes */
+  display: none;
   flex-direction: column;
   gap: 6px;
-  z-index: 1001; /* Garante que fique acima de outros elementos */
+  z-index: 1001;
 }
 
 .menu-hamburguer span {
@@ -17,7 +16,6 @@
   transition: all 0.3s ease-in-out;
 }
 
-/* Animação do Hambúrguer para "X" */
 .menu-hamburguer.aberto span:nth-child(1) {
   transform: rotate(45deg) translate(7px, 7px);
 }
@@ -28,8 +26,6 @@
   transform: rotate(-45deg) translate(7px, -7px);
 }
 
-
-/* -- Breakpoint para Tablets e Celulares -- */
 @media (max-width: 767px) {
   header nav ul {
     display: none;
@@ -41,7 +37,7 @@
   
   .menu-principal {
     display: none;
-    position: fixed; /* Menu fica fixo na tela */
+    position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
@@ -67,12 +63,11 @@
     font-size: var(--fs-md);
   }
 
-  /* Esconde o dropdown no mobile */
   .submenu {
     display: none !important;
   }
   .dropdown > a {
-    pointer-events: none; /* Desativa o link pai do dropdown no mobile */
+    pointer-events: none;
     color: var(--cor-neutra-media);
   }
 }

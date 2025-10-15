@@ -1,4 +1,3 @@
-/* ==> Cabeçalho e Navegação */
 header .container {
   display: flex;
   align-items: center;
@@ -9,17 +8,15 @@ header .container {
   margin: 0;
 }
 
-/* Define o tamanho da "moldura" do logo (o link) */
 .site-logo a {
   display: block;
-  width: 100px; /* << AJUSTE A LARGURA DESEJADA AQUI */
+  width: 100px;
 }
 
-/* Faz a imagem se ajustar dentro da "moldura" sem distorcer */
 .site-logo img {
   display: block;
-  width: 100%; /* Faz a imagem ocupar 100% da largura da moldura */
-  height: auto; /* Calcula a altura automaticamente para manter a proporção */
+  width: 100%;
+  height: auto;
 }
 
 header nav ul {
@@ -48,7 +45,6 @@ header nav ul a:hover {
   text-decoration: none;
 }
 
-/* ==> Submenu Dropdown */
 .dropdown {
   position: relative;
 }
@@ -78,7 +74,6 @@ header nav ul a:hover {
   margin-left: 0;
 }
 
-/* ==> Botões */
 .btn {
   display: inline-block;
   padding: var(--espaco-xs) var(--espaco-md);
@@ -114,7 +109,6 @@ header nav ul a:hover {
   box-shadow: none;
 }
 
-/* ==> Cards */
 .cards-container, .card-grid {
   display: grid;
   gap: var(--espaco-lg);
@@ -180,7 +174,6 @@ header nav ul a:hover {
   flex-grow: 1;
 }
 
-/* ==> Badges e Tags */
 .card-tags {
   margin-top: var(--espaco-sm);
 }
@@ -202,8 +195,6 @@ header nav ul a:hover {
 .badge-verde { background-color: var(--cor-sucesso); }
 .badge-roxo { background-color: #9b59b6; }
 
-
-/* ==> Formulários */
 form { margin-top: var(--espaco-lg); }
 fieldset { border: 1px solid var(--cor-neutra-media); border-radius: 8px; padding: var(--espaco-md); margin-bottom: var(--espaco-md); }
 legend { font-family: var(--fonte-titulos); font-weight: var(--fw-bold); font-size: var(--fs-md); color: var(--cor-primaria); padding: 0 var(--espaco-xs); margin-left: var(--espaco-sm); }
@@ -263,7 +254,6 @@ form button[type="submit"]:hover {
   color: white;
 }
 
-/* Validação Visual NATIVA */
 input:required:not(:placeholder-shown):valid,
 textarea:required:not(:placeholder-shown):valid {
   border-color: var(--cor-sucesso);
@@ -274,11 +264,9 @@ textarea:required:not(:placeholder-shown):invalid {
   border-color: var(--cor-erro);
 }
 
-/* Validação Visual customizada via JAVASCRIPT */
 .is-invalid { border-color: var(--cor-erro) !important; }
 .is-valid { border-color: var(--cor-sucesso) !important; }
 
-/* ==> Alerts */
 .alert {
   padding: var(--espaco-sm);
   margin-bottom: var(--espaco-md);
@@ -292,7 +280,6 @@ textarea:required:not(:placeholder-shown):invalid {
 .alert-aviso { color: #856404; background-color: #fff3cd; border-color: #ffeeba; }
 .alert-info { color: var(--cor-secundaria); background-color: #d1ecf1; border-color: #bee5eb; }
 
-/* ==> Acessibilidade */
 .visually-hidden {
   position: absolute;
   width: 1px;
